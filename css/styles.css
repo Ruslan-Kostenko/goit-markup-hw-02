@@ -2,6 +2,13 @@
   --primary-brand-color: #4d5ae5;
   --primary-text-color: #434455;
   --secondary-text-color: #2e2f42;
+  --background-page-color: #ffffff;
+  --background-light-mode: #f4f4fd;
+  --accent-color: #e7e9fc;
+  --pressed-btn-color: #404bbf;
+  --green-success-color: #31d0aa;
+  --subtle-text-color: #8e8f99;
+  /* --modal-overlay-color: #2e2f42; 40% */
 }
 
 .list {
@@ -23,7 +30,6 @@ body {
 /* Components */
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -52,12 +58,6 @@ body {
 }
 
 .logo-web {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--primary-brand-color);
 }
 
@@ -76,7 +76,6 @@ body {
 
 .contact-link {
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -95,12 +94,11 @@ body {
 }
 
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--background-page-color);
 }
 
 .hero-btn {
@@ -109,9 +107,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #404bbf;
+  color: var(--background-page-color);
+  background: var(--pressed-btn-color);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -132,11 +131,11 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--background-light-mode);
 }
 
 .footer-text {
-  color: #e7e9fc;
+  color: var(--accent-color);
 }
 
 /* Portfolio Filtr Btn */
@@ -147,13 +146,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #404bbf;
-  background: #f4f4fd;
+  color: var(--pressed-btn-color);
+  background: var(--background-light-mode);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .filtr-btn:hover,
 .filtr-btn:focus {
   background-color: var(--primary-brand-color);
-  color: #ffffff;
+  color: var(--background-page-color);
 }
